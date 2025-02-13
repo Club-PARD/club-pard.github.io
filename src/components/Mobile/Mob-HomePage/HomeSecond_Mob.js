@@ -148,7 +148,7 @@ const textDB = [
   },
   {
     id: 4,
-    text: "\n대가를 바라지 않고 남을 돕는 행위를 기꺼이 즐기는 것.\n홀로 성장하는 것을 넘어 함께 성장하는 법을 배워나가는 조직. \n\nPARD를 소개합니다. ",
+    text: "\n대가를 바라지 않고 남을 돕는 행위를\n기꺼이 즐기는 것.\n홀로 성장하는 것을 넘어 \n함께 성장하는 법을 배워나가는 조직.\n\nPARD를 소개합니다. ",
     breakPoint: secondScrollPoint + period2 + period3,
     period: period2,
     posX: "48%",
@@ -293,7 +293,7 @@ const textAlignLogic = (textInfo) => {
       return "center";
     case 3:
     case 4:
-      return "start";
+      return "center";
     default:
       return null;
   }

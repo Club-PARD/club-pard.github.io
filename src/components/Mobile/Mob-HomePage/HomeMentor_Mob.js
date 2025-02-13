@@ -3,6 +3,7 @@ import { theme } from "../../../styles/theme";
 import 하조은 from "../../../assets/img/하조은.png";
 import 주영민 from "../../../assets/img/주영민.png";
 import 김강학 from "../../../assets/img/김강학.png";
+import 김선엽 from "../../../assets/img/김선엽.png";
 
 function MentorCard(props) {
   return (
@@ -43,7 +44,7 @@ function HomeMentor() {
     {
       id: 2,
       imageSrc: 하조은,
-      title: " 1인분 해내는 주니어가 되기 위한 최고의 선택",
+      title: " 1인분 해내는\n주니어가 되기 위한\n최고의 선택",
       mentor_name: "하조은",
       mentor_from: "당근마켓 Software Engineer",
       color: "#FF5C00",
@@ -52,10 +53,19 @@ function HomeMentor() {
       id: 3,
       imageSrc: 김강학,
       title:
-        "스펙 쌓기용이 아닌, 정말 문제를 해결하고 싶은 사람들이 모여 함께 몰입하고 있습니다",
+        "스펙 쌓기용이 아닌,\n정말 문제를 해결하고\n싶은 사람들이 모여\n함께 몰입하고 있습니다",
       mentor_name: "김강학",
-      mentor_from: "토스 Product Owner",
+      mentor_from: "토스페이먼츠 TPO",
       color: "#64C59A",
+    },
+    {
+      id: 4,
+      imageSrc: 김선엽,
+      title:
+        "실무 경험을\n가장 의미있게\n해볼 수 있는 놀이터",
+      mentor_name: "김선엽",
+      mentor_from: "CJ OliveNetworks 신사업 전략",
+      color: "#5262F5",
     },
   ];
 
@@ -64,7 +74,7 @@ function HomeMentor() {
       <PartDiv>
         <ThemeProvider theme={theme}>
           <Header7>멘토 추천사</Header7>
-          <Sub3>함께 할 수 밖에 없는 이유</Sub3>
+          <Sub3>당신이 PARD와 함께 해야 하는 이유</Sub3>
           <PartContents>
             {contentsData.map((content) => (
               <PartWrapper key={content.id}>
@@ -87,17 +97,20 @@ const Header7 = styled.div`
   font-family: "NanumSquare Neo";
   margin-bottom: 25px;
   white-space: pre-line;
-  margin-right: 120px;
+  text-align: center;
 `;
 
 const Sub3 = styled.div`
-  font-size: ${(props) => props.theme.Mob_fontSizes.Subtitle3};
-  font-weight: ${(props) => props.theme.fontWeights.Subtitle3};
-  color: #ffffff;
-  font-family: "NanumSquare Neo";
+  color: #FFF;
+
+font-family: "NanumSquare Neo";
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 155%; /* 31px */
   margin-bottom: 14px;
   white-space: pre-line;
-  margin-right: 55px;
+  text-align: center;
 `;
 
 const Header6 = styled.div`
@@ -110,9 +123,10 @@ const Header6 = styled.div`
   font-family: "NanumSquare Neo";
   white-space: pre-line;
   text-align: center;
-  line-height: 140%;
+  line-height: ${(props) =>
+    props.id === 3 ? "140%" : "150%"};
   display: flex;
-  margin-top: ${(props) => (props.id === 1 ? "-5px" : "20px")};
+  margin-top: ${(props) => (props.id === 1 ? "5px" : "20px")};
   margin-left: ${(props) => (props.id === 1 ? "10px" : "0")};
   margin-bottom: 15px;
 `;
@@ -141,11 +155,11 @@ const Body2 = styled.div`
 const PartContents = styled.div`
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
-  gap: 100px;
-  margin-top: 110px;
+  align-items: center;
+  gap: 60px;
+  margin-top: 93px;
 `;
 
 const PartWrapper = styled.div``;
@@ -156,7 +170,7 @@ const ContentWrapper = styled.div`
   flex-direction: column;
   align-items: center;
 
-  width: 250px;
+  width: 240px;
   height: 270px;
   background: rgba(255, 255, 255, 0.05);
   border-radius: 20px;
@@ -187,8 +201,8 @@ const Image = styled.img`
 `;
 
 const PartDiv = styled.div`
-  padding-top: 30px;
-  height: 1500px;
+  padding-top: 115px;
+  height: 1885px;
   display: flex;
   flex-direction: column;
   align-items: center;

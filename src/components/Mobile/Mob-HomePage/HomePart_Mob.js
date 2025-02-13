@@ -107,7 +107,7 @@ const Header7 = styled.div`
   font-weight: ${(props) => props.theme.fontWeights.Header7};
   color: #ffffff;
   font-family: "NanumSquare Neo";
-  margin-right: 180px;
+  margin-right: 213px;
   white-space: pre-line;
   margin-bottom: 40px;
   margin-top: 45px;
@@ -144,7 +144,9 @@ const ContentWrapper = styled.div`
   width: 243px;
   height: 199px;
   justify-content: center;
-  align-items: flex-start;
+  align-items: ${(props) => props.textAlign === "right" ? "flex-end" : "flex-start"};
+
+  /* align-items: flex-start; */
 `;
 
 const Image = styled.img`
@@ -193,7 +195,8 @@ const PartContents = styled.div`
   margin-top: 80px;
   position: relative;
   align-items: center;
-  padding-left: 25px;
+  /* padding-left: 25px; */
+  /* padding-right: 25px; */
 `;
 
 const Button1 = styled.button`
@@ -204,8 +207,8 @@ const Button1 = styled.button`
   display: flex;
   align-items: center;
   line-height: 9px;
-  width: 290px;
-  height: 48px;
+  width: 199px;
+  height: 52px;
   background-color: #7b3fef;
   justify-content: center;
   margin-top: 58px;
