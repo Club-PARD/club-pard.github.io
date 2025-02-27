@@ -2,6 +2,26 @@ import axios from "axios";
 
 const API_URL = process.env.REACT_APP_API_URL
 
+export const getWebBanner = async () => {
+  try {
+    const response = await axios.get(`${API_URL}/recruiting/web/banner`);
+    return response.data;
+  } catch (error) {
+    console.error("Error fetching project data:", error);
+    throw error;
+  }
+}
+
+export const getMobBanner = async () => {
+  try {
+    const response = await axios.get(`${API_URL}/recruiting/mobile/banner`);
+    return response.data;
+  } catch (error) {
+    console.error("Error fetching project data:", error);
+    throw error;
+  }
+}
+
 export const getProjectWebData = async (projectId) => {
   try {
     const response = await axios.get(`${API_URL}/api/archive/${projectId}`);

@@ -20,8 +20,8 @@ function InquiryManagement() {
               <ImageWrapper>
                 <Image src={content.imgsrc} alt={`Image ${content.id}`}></Image>
                 <TextWrap position={content.position}>
-                  <Caption>{content.position_k}</Caption>
-                  <Subtitle1>{content.name}</Subtitle1>
+                  <Subtitle1>{content.position_k}</Subtitle1>
+                  <Caption>{content.name}</Caption>
                   <IconWrapper>
                     {content.site.map(
                       (site) =>

@@ -4,22 +4,28 @@ import { APPLY_FORM_URL, pardDATA } from "../../../utils/data.constant";
 import { useState } from "react";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import { getMobBanner } from "../../../utils/api";
+
 
 export const BannerMob = () => {
   const navigate = useNavigate();
-  const [bannerImg, setBannerImg] = useState(null);
 
-  useEffect(() => {
-    import(
-      `../../../assets/img/banner/mob_banner_${pardDATA.currentGeneration}기.png`
-    )
-      .then((image) => {
-        setBannerImg(image.default);
-      })
-      .catch((err) => {
-        console.error("Error loading image:", err);
-      });
-  }, []);
+  const [data, setData] = useState();
+  
+    useEffect(() => {
+      const getBanner = async () => {
+        try {
+          const response = await getMobBanner();
+          console.log(response);
+          setData(response);
+        } catch (error) {
+          console.error("Error fetching project data:", error);
+        }
+      };
+      getBanner();
+    }, []);
+    console.log(data);
+    const bannerImg = data?.bannerUrl || null;
 
   const handleClick = () => {
     pardDATA.recruitStatus === "ready"

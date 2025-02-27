@@ -339,9 +339,12 @@ const HashContainer = styled.div`
 
 const Hash = styled.div`
   display: flex;
-  width: 65px; //이거 생각해보기
+  width: auto;
   height: 30px;
-  padding: 7.757px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 7.757px;
+  padding-bottom: 7.757px;
   justify-content: center;
   align-items: center;
   gap: 7.757px;
