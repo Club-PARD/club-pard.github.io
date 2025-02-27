@@ -45,14 +45,11 @@ function useScrollPosition() {
 }
 
 const HomeSecond = () => {
-  const [text1, setText1] = useState(false);
-  const [text2, setText2] = useState(false);
-  const [text3, setText3] = useState(false);
   const [text4, setText4] = useState(false);
   const [text5, setText5] = useState(false);
 
-  const setList = [setText1, setText2, setText3, setText4, setText5];
-  const list1 = [text1, text2, text3, text4, text5];
+  const setList = [setText4, setText5];
+  const list1 = [text4, text5];
   const position = useScrollPosition();
 
   useEffect(() => {
@@ -62,26 +59,11 @@ const HomeSecond = () => {
           position < textInfo.breakPoint + textInfo.period
       );
     });
-  }, [position, text1, text2, text3, text4, text5]);
+  }, [position, text4, text5]);
 
   return (
     <Div>
       <ThemeProvider theme={theme}>
-        <Background
-          src={backgroundImage1}
-          breakPointInfos={breakPointInfos}
-          position={position}
-          id={0}
-        >
-          <Animation1
-            isTextVisible={list1}
-            textInfos={textDB.slice(0, 3)}
-            position={position}
-          ></Animation1>
-        </Background>
-        <div style={{ height: pageLength[0] + "px" }}></div>
-        <Background src={backgroundImage2}></Background>
-        <div style={{ height: pageLength[1] + "px" }}></div>
         <Background
           src={backgroundImage3}
           breakPointInfos={breakPointInfos}
@@ -114,30 +96,6 @@ const secondScrollPoint =
   firstScrollPoint + pageLength[0] + pageLength[1] + 2500;
 
 const textDB = [
-  {
-    id: 0,
-    text: "협업하고",
-    breakPoint: firstScrollPoint + period1,
-    period: 1000,
-    posX: "25%",
-    posY: "0%",
-  },
-  {
-    id: 1,
-    text: "성장하고",
-    breakPoint: firstScrollPoint + period1,
-    period: 1000,
-    posX: "40%",
-    posY: "0%",
-  },
-  {
-    id: 2,
-    text: "해결하기",
-    breakPoint: firstScrollPoint + period1,
-    period: 1000,
-    posX: "55%",
-    posY: "0%",
-  },
   {
     id: 3,
     text: "PARD는 기획자, 디자이너, 개발자가 모여\nPay it Forward를 실천하는 대학생 IT 협업동아리입니다.",
@@ -275,10 +233,6 @@ const Div = styled.div`
 `;
 const textPaddingLofic = (textInfo) => {
   switch (textInfo.id) {
-    case 0:
-    case 1:
-    case 2:
-      return "0px";
     case 3:
     case 4:
       return "0px";
@@ -288,10 +242,6 @@ const textPaddingLofic = (textInfo) => {
 };
 const textAlignLogic = (textInfo) => {
   switch (textInfo.id) {
-    case 0:
-    case 1:
-    case 2:
-      return "center";
     case 3:
     case 4:
       return "center";
@@ -301,10 +251,6 @@ const textAlignLogic = (textInfo) => {
 };
 const textFontSizeLogic = (textInfo, theme) => {
   switch (textInfo.id) {
-    case 0:
-    case 1:
-    case 2:
-      return theme.Web_fontSizes.Header0;
     case 3:
       return theme.Web_fontSizes.Header7;
     case 4:
@@ -315,10 +261,6 @@ const textFontSizeLogic = (textInfo, theme) => {
 };
 const textFontWeightLogic = (textInfo, theme) => {
   switch (textInfo.id) {
-    case 0:
-    case 1:
-    case 2:
-      return theme.fontWeights.Header0;
     case 3:
       return theme.fontWeights.Header7;
     case 4:
