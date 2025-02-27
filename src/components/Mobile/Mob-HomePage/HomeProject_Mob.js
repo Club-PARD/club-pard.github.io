@@ -130,7 +130,6 @@ const Image = styled.img`
   height: 319px;
   object-fit: cover;
   transition: transform 0.3s ease-in-out;
-  margin-top: 5px;
   border-radius: 17.5px;
 `;
 
@@ -190,7 +189,7 @@ const Overlay = styled.div`
   bottom: -10px;
   left: 0px;
   width: 100.4%;
-  height: 135px;
+  height: 112px;
   background-color: rgba(0, 0, 0, 0.6);
   box-shadow: 0px -1px 15px 0px rgba(0, 0, 0, 0.05);
   backdrop-filter: blur(5px);
@@ -204,31 +203,31 @@ const Overlay = styled.div`
 const ProjectTitle = styled.p`
   color: #FFF;
   font-family: "NanumSquare Neo";
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 800;
-  line-height: 140%;
-  margin-left: 21px;
+  line-height: 120%;
+  margin-left: 15px;
   margin-top: 16px;
 `;
 
 const ProjectOncentence = styled.div`
   color: #FFF;
   font-family: "NanumSquare Neo";
-  font-size: 14px;
+  font-size: 12px;
   opacity: 0.8;
-  margin-top: -30px;
-  margin-left: 21px;
+  margin-top: -20px;
+  margin-left: 15px;
 `;
 
 const ProjectInfo = styled.div`
   position: absolute;
-  bottom: 14px;
-  right: 21px;
+  bottom: 11px;
+  right: 17px;
   color: #FFF;
   text-align: right;
   font-family: "NanumSquare Neo";
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 12px;
+  font-weight: 400;
   opacity: 0.6;
 `;
 

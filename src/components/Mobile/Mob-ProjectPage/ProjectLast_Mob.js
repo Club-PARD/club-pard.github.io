@@ -214,6 +214,7 @@ const ContentsWrap = styled.div`
 const MainImg = styled.img`
   width: 303px;
   height: 320px;
+  border-radius: 14px;
 `;
 
 const ContentTextDiv = styled.div`

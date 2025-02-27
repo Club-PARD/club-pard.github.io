@@ -231,7 +231,7 @@ function ProjectDetail() {
               </EtcNameContainer>
               <EtcNameContainer>
                 <EtcName>디자인</EtcName>
-                <EtcContentContainer>{DesignerList}</EtcContentContainer>
+                <EtcContentContainerDesign>{DesignerList}</EtcContentContainerDesign>
               </EtcNameContainer>
               <EtcNameContainer>
                 <EtcName>개발</EtcName>
@@ -248,7 +248,7 @@ function ProjectDetail() {
   </EtcNameContainer2>
   <EtcNameContainer2 id={p_id}>
     <EtcName>디자인</EtcName>
-    <EtcContentContainer>{DesignerToolList}</EtcContentContainer>
+    <EtcContentContainerDesign>{DesignerToolList}</EtcContentContainerDesign>
   </EtcNameContainer2>
   <EtcNameContainer2 id={p_id}>
     <EtcName>개발</EtcName>
@@ -473,7 +473,8 @@ const SolutionTitle = styled.div`
   gap: 10px;
   border-radius: 13px;
   background: #7B3FEF;
-
+  white-space: nowrap;
+  
   p {
     color: #FFF;
   text-align: center;
@@ -544,6 +545,7 @@ const EtcNameContainer = styled.div`
   align-items: center;
   gap: 33px;
   margin-bottom: 20px;
+  white-space: nowrap;
 `;
 
 const EtcNameContainer2 = styled.div`
@@ -552,6 +554,7 @@ const EtcNameContainer2 = styled.div`
   align-items: center;
   gap: 33px;
   margin-bottom: 20px;
+  white-space: nowrap;
 `;
 
 const EtcName = styled.div`
@@ -573,6 +576,16 @@ flex-wrap: wrap;
 width: 400px;
 height: 36px;
 line-height: 160%;
+`;
+const EtcContentContainerDesign = styled.div`
+display: flex;
+align-items: center;
+gap: 20px; /* Decrease gap between items */
+flex-wrap: wrap;
+width: 400px;
+height: auto;
+line-height: 160%;
+margin-left: -3.25px;
 `;
 
 const EtcContent = styled.p`

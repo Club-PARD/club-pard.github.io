@@ -262,7 +262,7 @@ function ProjectDetail_Mob() {
               </EtcNameContainer>
               <EtcNameContainer>
                 <EtcName>디자인</EtcName>
-                <EtcContentContainer>{DesignerList}</EtcContentContainer>
+                <EtcContentContainerDesign>{DesignerList}</EtcContentContainerDesign>
               </EtcNameContainer>
               <EtcNameContainer>
                 <EtcName>개발</EtcName>
@@ -279,7 +279,7 @@ function ProjectDetail_Mob() {
   </EtcNameContainer2>
   <EtcNameContainer2 id={p_id}>
     <EtcName>디자인</EtcName>
-    <EtcContentContainer>{DesignerToolList}</EtcContentContainer>
+    <EtcContentContainerDesign>{DesignerToolList}</EtcContentContainerDesign>
   </EtcNameContainer2>
   <EtcNameContainer2 id={p_id}>
     <EtcName>개발</EtcName>
@@ -450,7 +450,7 @@ const MainBackImg = styled.img`
 
 const MainDiv = styled.div`
   width: 303px;
-  height: 1500px;
+  /* height: 1500px; */
   /* background-color: green; */
   min-height: fit-content;
   display: flex;
@@ -699,7 +699,7 @@ const SolutionBoxContainer = styled.div`
 
 
 
-const AllEtcContainer = styled.footer`
+const AllEtcContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -708,7 +708,6 @@ const AllEtcContainer = styled.footer`
   justify-content: center;
   width: 100vw; /* 뷰포트 전체 너비 */
   min-width: 100%; /* 최소 너비 보장 */
-  height: 834px;
   padding-bottom: 46.52px;
   padding-top: 46.52px;
   padding-left: 0; /* 왼쪽 패딩 제거 */
@@ -779,6 +778,7 @@ const EtcName = styled.div`
   font-weight: 800;
   line-height: 160%;
   opacity: 0.6;
+  white-space: nowrap;
 `;
 
 const EtcContentContainer = styled.div`
@@ -789,6 +789,17 @@ flex-wrap: wrap;
 width: 400px;
 height: auto;
 line-height: 160%;
+`;
+
+const EtcContentContainerDesign = styled.div`
+display: flex;
+align-items: center;
+gap: 20px; /* Decrease gap between items */
+flex-wrap: wrap;
+width: 400px;
+height: auto;
+line-height: 160%;
+margin-left: -3.25px;
 `;
 
 const EtcContent = styled.p`

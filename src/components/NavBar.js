@@ -87,7 +87,6 @@ const NavBarWrapper = styled.nav`
   height: 70px;
   display: flex;
   justify-content: center;
-
   top: 0;
   width: 100vw;
   z-index: 999;

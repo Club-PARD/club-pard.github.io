@@ -4,7 +4,7 @@ import { APPLY_FORM_URL, pardDATA } from "../../../utils/data.constant";
 import { useState } from "react";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { getMobBanner } from "../../../utils/api";
+import { getWebBanner } from "../../../utils/api";
 
 
 export const BannerMob = () => {
@@ -15,7 +15,7 @@ export const BannerMob = () => {
     useEffect(() => {
       const getBanner = async () => {
         try {
-          const response = await getMobBanner();
+          const response = await getWebBanner();
           console.log(response);
           setData(response);
         } catch (error) {

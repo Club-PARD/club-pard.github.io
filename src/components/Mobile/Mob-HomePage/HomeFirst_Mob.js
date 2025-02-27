@@ -160,7 +160,7 @@ const HomeVideoMob = () => {
                         style={{
                           transform: `translateX(-${Math.min(
                             (position - 950) / 20,
-                            125
+                            121
                           )}px)`,
                         }}
                       >
@@ -172,7 +172,7 @@ const HomeVideoMob = () => {
                         style={{
                           transform: `translateX(${Math.min(
                             (position - 950) / 20,
-                            90
+                            120
                           )}px)`,
                         }}
                       >
@@ -183,10 +183,10 @@ const HomeVideoMob = () => {
                 ) : changed === "c" ? (
                   <>
                     <SplitTextContainer isVisible={isVisible}>
-                      <Text1 style={{ transform: `translateX(-${125}px)` }}>
+                      <Text1 style={{ transform: `translateX(-${121}px)` }}>
                         {text1}
                       </Text1>
-                      <Text2 style={{ transform: `translateX(${90}px)` }}>
+                      <Text2 style={{ transform: `translateX(${120}px)` }}>
                         {text2}
                       </Text2>
                     </SplitTextContainer>
@@ -194,10 +194,10 @@ const HomeVideoMob = () => {
                 ) : changed === "cd" ? (
                   <>
                     <SplitTextContainer isVisible={isVisible}>
-                      <Text1 style={{ transform: `translateX(-${125}px)` }}>
+                      <Text1 style={{ transform: `translateX(-${121}px)` }}>
                         {text1}
                       </Text1>
-                      <Text2 style={{ transform: `translateX(${90}px)` }}>
+                      <Text2 style={{ transform: `translateX(${120}px)` }}>
                         {text2}
                       </Text2>
                       <MovedText
@@ -211,10 +211,10 @@ const HomeVideoMob = () => {
                 ) : changed === "cdd" ? (
                   <>
                     <SplitTextContainer isVisible={isVisible}>
-                      <Text1 style={{ transform: `translateX(-${125}px)` }}>
+                      <Text1 style={{ transform: `translateX(-${121}px)` }}>
                         {text1}
                       </Text1>
-                      <Text2 style={{ transform: `translateX(${90}px)` }}>
+                      <Text2 style={{ transform: `translateX(${120}px)` }}>
                         {text2}
                       </Text2>
                       <MovedText
