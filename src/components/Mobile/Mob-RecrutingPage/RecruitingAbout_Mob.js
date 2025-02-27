@@ -515,7 +515,7 @@ const Body2 = styled.div`
 `;
 const Extra = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center; /* 추가 */
   text-align: center; /* 텍스트도 중앙 정렬 */

@@ -123,7 +123,7 @@ const ImgContainer = styled.div`
 const NavigationButton = styled.div`
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  /* transform: translateY(-0%); */
   z-index: 1;
   background-size: contain;
   background-repeat: no-repeat;

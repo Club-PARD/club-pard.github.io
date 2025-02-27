@@ -110,15 +110,18 @@ const ButtonContainer = styled.div`
   margin-top: 20px;
   margin-bottom: 20px;
   margin-left: 22px;
-  justify-content: flex-start;
+  /* justify-content: flex-start;
   overflow-x: auto;
-  white-space: nowrap;
+  white-space: nowrap; */
   width: 100%;
 
   button {
-    width: 79.5px;
-    height: 30px;
-    padding: 5.818px;
+    width: auto;
+    height: auto;
+    padding-top: 5.818px;
+    padding-bottom: 5.818px;
+    padding-right: 9px;
+    padding-left: 9px;
     background-color: #1A1A1A;
     color: white;
     font-family: "NanumSquare Neo";
@@ -138,7 +141,7 @@ const ButtonContainer = styled.div`
 
 const scrollAnimation = keyframes`
   0% {
-    transform: translateX(110%);
+    transform: translateX(0%);
   }
   100% {
     transform: translateX(-410%);
@@ -150,7 +153,7 @@ const ScrollContainer = styled.div`
   max-width: 1380px;
   display: flex;
   justify-content: flex-start;
-  animation: ${scrollAnimation} 30s linear infinite;
+  animation: ${scrollAnimation} 25s linear infinite;
 `;
 
 const ContentDiv = styled.div`

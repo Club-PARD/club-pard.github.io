@@ -153,7 +153,7 @@ const HomeFirst = () => {
                       style={{
                         transform: `translateX(-${Math.min(
                           (position - 650) / 6,
-                          293
+                          305
                         )}px)`,
                       }}
                     >
@@ -163,7 +163,7 @@ const HomeFirst = () => {
                       style={{
                         transform: `translateX(${Math.min(
                           (position - 650) / 6,
-                          325
+                          400
                         )}px)`,
                       }}
                     >
@@ -174,10 +174,10 @@ const HomeFirst = () => {
               ) : changed === "c" ? (
                 <>
                   <SplitTextContainer isVisible={isVisible}>
-                    <Text1 style={{ transform: `translateX(-${293}px)` }}>
+                    <Text1 style={{ transform: `translateX(-${305}px)` }}>
                       {text1}
                     </Text1>
-                    <Text2 style={{ transform: `translateX(${325}px)` }}>
+                    <Text2 style={{ transform: `translateX(${400}px)` }}>
                       {text2}
                     </Text2>
                   </SplitTextContainer>
@@ -185,10 +185,10 @@ const HomeFirst = () => {
               ) : changed === "cd" ? (
                 <>
                   <SplitTextContainer isVisible={isVisible}>
-                    <Text1 style={{ transform: `translateX(-${293}px)` }}>
+                    <Text1 style={{ transform: `translateX(-${305}px)` }}>
                       {text1}
                     </Text1>
-                    <Text2 style={{ transform: `translateX(${325}px)` }}>
+                    <Text2 style={{ transform: `translateX(${400}px)` }}>
                       {text2}
                     </Text2>
                     <MovedText
@@ -202,10 +202,10 @@ const HomeFirst = () => {
               ) : changed === "cdd" ? (
                 <>
                   <SplitTextContainer isVisible={isVisible}>
-                    <Text1 style={{ transform: `translateX(-${293}px)` }}>
+                    <Text1 style={{ transform: `translateX(-${305}px)` }}>
                       {text1}
                     </Text1>
-                    <Text2 style={{ transform: `translateX(${325}px)` }}>
+                    <Text2 style={{ transform: `translateX(${400}px)` }}>
                       {text2}
                     </Text2>
                     <MovedText
@@ -467,7 +467,7 @@ const MovedText = styled.div`
   width: 1000px;
   position: absolute;
   top: 107%; // adjust this value to control the initial position
-  left: 15%; // position it in the middle of its parent
+  left: 12%; // position it in the middle of its parent
   transform: translate(-50%, -50%); // change the origin of transformation
   transition: transform 0.5s ease-in-out forwards;
   animation: ${({ isAnimation }) =>
