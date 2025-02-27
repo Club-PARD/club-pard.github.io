@@ -410,6 +410,8 @@ const Div = styled.div`
   justify-content: center;
   align-items: center;
   padding: 150px 36px 100px;
+  margin-top: 150px;
+
 `;
 const PartDiv = styled.div`
   height: 800px;
@@ -516,9 +518,9 @@ const Body2 = styled.div`
 const Extra = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center; /* 추가 */
-  text-align: center; /* 텍스트도 중앙 정렬 */
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
 `;
 const QuestionWrap = styled.div`
   display: flex;
