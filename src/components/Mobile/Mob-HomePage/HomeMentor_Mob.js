@@ -126,7 +126,7 @@ const Header6 = styled.div`
   line-height: ${(props) =>
     props.id === 3 ? "140%" : "150%"};
   display: flex;
-  margin-top: ${(props) => (props.id === 1 ? "5px" : "20px")};
+  margin-top: ${(props) => (props.id === 1 ? "5px" : "10px")};
   margin-left: ${(props) => (props.id === 1 ? "10px" : "0")};
   margin-bottom: 15px;
 `;
