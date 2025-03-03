@@ -26,6 +26,7 @@ const Animation1 = ({ isTextVisible, textInfos, position }) => {
     </div>
   );
 };
+
 function useScrollPosition() {
   const [scrollPos, setScrollPos] = useState(0);
 
@@ -67,21 +68,6 @@ const HomeSecond = () => {
   return (
     <Div>
       <ThemeProvider theme={theme}>
-        <Background
-          src={backgroundImage1}
-          breakPointInfos={breakPointInfos}
-          position={position}
-          id={0}
-        >
-          <Animation1
-            isTextVisible={list1}
-            textInfos={textDB.slice(0, 3)}
-            position={position}
-          ></Animation1>
-        </Background>
-        <div style={{ height: pageLength[0] + "px" }}></div>
-        <Background src={backgroundImage2}></Background>
-        <div style={{ height: pageLength[1] + "px" }}></div>
         <Background
           src={backgroundImage3}
           breakPointInfos={breakPointInfos}
@@ -141,7 +127,7 @@ const textDB = [
   {
     id: 3,
     text: "PARD는 기획자, 디자이너, 개발자가 모여\nPay it Forward를 실천하는 대학생 IT 협업동아리입니다.",
-    breakPoint: secondScrollPoint + period2,
+    breakPoint: firstScrollPoint + period1 + period2,
     period: period2 + period3,
     posX: "40%",
     posY: "0%",
@@ -149,7 +135,7 @@ const textDB = [
   {
     id: 4,
     text: "대가를 바라지 않고 남을 돕는 행위를 기꺼이 즐기는 것.\n홀로 성장하는 것을 넘어 함께 성장하는 법을 배워나가는 조직. \n\nPARD를 소개합니다. ",
-    breakPoint: secondScrollPoint + period2 + period3,
+    breakPoint: firstScrollPoint + period1 + period2 + period3,
     period: period2,
     posX: "48%",
     posY: "0%",
@@ -161,7 +147,7 @@ const breakPointInfos = [
     period: pageLength[0] + 2000,
   },
   {
-    breakPoint: secondScrollPoint,
+    breakPoint: firstScrollPoint + period1 + period2,
     period: period2 + period3 + 1400,
   },
 ];
@@ -201,7 +187,13 @@ const Background = styled.div`
 
 const backgroundImgLogic = (breakPointInfos, position, id, src) => {
   if (breakPointInfos == null || id == null) return `url(${src})`;
+
   const offset = position - breakPointInfos[id].breakPoint;
+
+  if (id === 1 && offset > 500 && offset < textDB[3].breakPoint) {
+    return `url(${backgroundImage3op})`; // Display backgroundImage3op after backgroundImage3
+  }
+
   if (offset > 0 && offset < breakPointInfos[id].period) {
     switch (id) {
       case 1:
