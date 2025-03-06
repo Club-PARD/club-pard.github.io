@@ -427,7 +427,7 @@ const Subtitle2 = styled.div`
 const PartDiv = styled.div`
   position: relative;
   width: 100%;
-
+overflow-x: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;

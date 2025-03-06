@@ -68,21 +68,6 @@ const HomeSecondMob = () => {
     <Div>
       <ThemeProvider theme={theme}>
         <Background
-          src={backgroundImage1}
-          breakPointInfos={breakPointInfos}
-          position={position}
-          id={0}
-        >
-          <Animation1
-            isTextVisible={list1}
-            textInfos={textDB.slice(0, 3)}
-            position={position}
-          ></Animation1>
-        </Background>
-        <div style={{ height: pageLength[0] + "px" }}></div>
-        <Background src={backgroundImage2}></Background>
-        <div style={{ height: pageLength[1] + "px" }}></div>
-        <Background
           src={backgroundImage3}
           breakPointInfos={breakPointInfos}
           position={position}
@@ -105,9 +90,9 @@ export default HomeSecondMob;
 
 const request1 = false;
 
-const firstScrollPoint = 12800; //homesecond 시작 스크롤 위치
+const firstScrollPoint = 5300; //homesecond 시작 스크롤 위치
 const pageLength = [2000, 750, 3400];
-const period1 = 200;
+const period1 = 400;
 const period2 = 1000;
 const period3 = 1500;
 const secondScrollPoint =
@@ -141,7 +126,7 @@ const textDB = [
   {
     id: 3,
     text: "PARD는 기획자, 디자이너, 개발자가 모여\n Pay it Forward를 실천하는 \n대학생 IT 협업동아리입니다.",
-    breakPoint: secondScrollPoint + period2,
+    breakPoint: firstScrollPoint + period1 + period2,
     period: period2 + period3,
     posX: "43%",
     posY: "-30%",
@@ -149,7 +134,7 @@ const textDB = [
   {
     id: 4,
     text: "\n대가를 바라지 않고\n남을 돕는 행위를 기꺼이 즐기는 것.\n\n홀로 성장하는 것을 넘어 \n함께 성장하는 법을 배워나가는 조직.\n\nPARD를 소개합니다. ",
-    breakPoint: secondScrollPoint + period2 + period3,
+    breakPoint: firstScrollPoint + period2 + period3,
     period: period2,
     posX: "40%",
     posY: "-40%",
@@ -161,7 +146,7 @@ const breakPointInfos = [
     period: pageLength[0] + 2000,
   },
   {
-    breakPoint: secondScrollPoint,
+    breakPoint: firstScrollPoint + period1 + period2,
     period: period2 + period3 + 1400,
   },
 ];
@@ -169,7 +154,7 @@ const breakPointInfos = [
 const Background = styled.div`
   background-image: ${({ breakPointInfos, position, id, src }) =>
     backgroundImgLogic(breakPointInfos, position, id, src)};
-  background-size: ${({ id }) => (id == 1 ? "contain" : "cover")};
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 
@@ -305,9 +290,9 @@ const textFontSizeLogic = (textInfo, theme) => {
     case 2:
       return theme.Mob_fontSizes.Header2;
     case 3:
-      return theme.Mob_fontSizes.Header5;
+      return "22px";
     case 4:
-      return theme.Web_fontSizes.Header6;
+      return "18px";
     default:
       return null;
   }
