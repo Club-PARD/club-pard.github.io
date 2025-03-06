@@ -34,7 +34,7 @@ function HomeLastMob() {
     <Div ref={sectionRef}>
       <PartDiv>
         <ThemeProvider theme={theme}>
-          <Header7>매번 다른 파도와 함께</Header7>
+          <Header7>매번 다른<br />파도와 함께</Header7>
           <B3>
             파드는 매번 새로운 파디들과 함께
             <br />
@@ -43,7 +43,6 @@ function HomeLastMob() {
             혁신적인 서비스를 만들어갑니다.
           </B3>
           <InfoWrap>
-            <ScrollContainer>
               {/* ✅ 애니메이션 없이 고정된 숫자 */}
               <InfoBox>
                 <InfoContent>런칭 서비스</InfoContent>
@@ -58,7 +57,6 @@ function HomeLastMob() {
                 <InfoContent>누적 활동 인원</InfoContent>
                 <InfoNumStatic>134명</InfoNumStatic>
               </InfoBox>
-            </ScrollContainer>
           </InfoWrap>
           <Line>
             <Shape>"</Shape>
@@ -94,7 +92,7 @@ const Div = styled.div`
 `;
 
 const PartDiv = styled.div`
-  height: 1000px;
+  height: 1650px;
   width: 375px;
   display: flex;
   flex-direction: column;
@@ -108,8 +106,8 @@ const Header7 = styled.div`
   color: #ffffff;
   font-family: "NanumSquare Neo";
   text-align: center;
-  margin-top: 57px;
-  margin-bottom: 58px;
+  margin-top: 115px;
+  margin-bottom: 30px;
   white-space: pre-line;
   line-height: 140%;
 `;
@@ -179,61 +177,43 @@ const B3 = styled.div`
 `;
 
 const InfoWrap = styled.div`
-  width: 325px;
+  /* width: 325px; */
   margin-top: 72px;
-  margin-bottom: 96px;
+  margin-bottom: 70px;
 `;
 
 const InfoBox = styled.div`
-  width: 156px;
-  height: 140px;
+  width: 270px;
+  height: 250px;
   flex-shrink: 0;
-  border-radius: 10px;
+  margin-bottom: 28px;
+  border-radius: 18.205px;
   background: rgba(255, 255, 255, 0.05);
 `;
 
 const InfoContent = styled.div`
   color: #F5F5F5;
   text-align: center;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 140%;
-  padding-top: 39px;
+  font-family: "NanumSquare Neo";
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 155%;
+  padding-top: 80px;
 `;
 
 const InfoNumStatic = styled.div`
   color: #FFF;
   text-align: center;
   font-family: "NanumSquare Neo";
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: 140%; /* 42px */
+  font-size: 48px;
+font-style: normal;
+font-weight: 800;
+line-height: 140%; /* 42px */
   margin-top: 3.5px;
 `;
 
 const RecruitmentStatusButtonWrapper = styled.div`
-  margin-bottom: 95px;
+  margin-bottom: 380px;
 `;
 
-// keyframes 애니메이션 정의 (15초 동안 좌측으로 전체 컨텐츠 이동)
-const scrollAnimation = keyframes`
-  0% {
-    transform: translateX(140%);
-  }
-  100% {
-    transform: translateX(-210%);
-  }
-`;
-
-// 스크롤 컨테이너에 애니메이션 적용
-const ScrollContainer = styled.div`
-  width: 100%;
-  max-width: 540px;
-  /* overflow-x: auto; */
-  display: flex;
-  flex-direction: row;
-  gap: 15px;
-  animation: ${scrollAnimation} 7s linear infinite;
-`;

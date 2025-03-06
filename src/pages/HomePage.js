@@ -72,4 +72,5 @@ const HomePageComponent_Web = styled.div`
 
 const HomePageComponent_Mob = styled.div`
   width: 100%;
+  /* overflow-x: hidden; */
 `;
