@@ -21,12 +21,17 @@ const HomeFirst = () => {
   return (
     <>
       <Container>
-        <VideoContainer isColor={backcolor} isFixed={isFixed}>
+      <VideoContainer isColor={backcolor} isFixed={isFixed}>
           {isSafari ? (
-            <VideoBackgroundImg
-              src={require("../../../assets/img/BackgroundImg_Web.png")}
-              alt="background"
-            />
+            <VideoBackground autoPlay loop muted playsInline>
+              <source
+                playsInline
+                muted
+                autoPlay
+                src={require("../../../assets/Video/BackGroundVideo.mp4")}
+                type="video/mp4"
+              />
+            </VideoBackground>
           ) : (
             <VideoBackground autoPlay loop muted playsInline>
               <source
