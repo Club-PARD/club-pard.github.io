@@ -94,7 +94,7 @@ const Div = styled.div`
 
 const AppContainer = styled.div`
   display: flex;
-  width: 1700px;
+  width: 375px;
   height: 453px;
   background: #1a1a1a;
   margin: 0;

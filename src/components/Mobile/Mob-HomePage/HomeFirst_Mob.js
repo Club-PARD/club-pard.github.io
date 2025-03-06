@@ -30,7 +30,7 @@ const HomeVideoMob = () => {
           </VideoBackground>
         ) : (
           <VideoBackgroundImg
-            src={require("../../../assets/img/BackgroundImg_Mob.png")}
+            src={require("../../../assets/Video/BackGroundVideo_Mob.mp4")}
             alt="background"
           />
         )}
