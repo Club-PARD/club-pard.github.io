@@ -36,7 +36,7 @@ function RecruitingSecond() {
                 </Icon1B>
               </IconWrap>
               <Box1>서류접수</Box1>
-              <BoxText>2/20(목) ~ 3/4(화)</BoxText>
+              <BoxText>3/8(토) ~ 3/11(화)</BoxText>
             </Box>
             <Box
               style={{
@@ -65,7 +65,7 @@ function RecruitingSecond() {
                 </Icon2B>
               </IconWrap>
               <Box2>서류 합격 발표</Box2>
-              <BoxText>3/5(수) 오전</BoxText>
+              <BoxText>3/12(수)</BoxText>
             </Box>
             <Box
               style={{
@@ -82,7 +82,7 @@ function RecruitingSecond() {
                 </Icon3>
               </IconWrap>
               <Box3>면접</Box3>
-              <BoxText>3/7(금) ~ 3/8(토)</BoxText>
+              <BoxText>3/13(목) ~ 3/14(금)</BoxText>
             </Box>
             <Box
               style={{
@@ -109,7 +109,7 @@ function RecruitingSecond() {
                 </Icon4B>
               </IconWrap>
               <Box4>최종합격 발표</Box4>
-              <BoxText>3/11(화) 00시 전</BoxText>
+              <BoxText>3/14(금)</BoxText>
             </Box>
           </Container>
 
