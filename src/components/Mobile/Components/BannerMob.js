@@ -4,7 +4,7 @@ import { APPLY_FORM_URL, pardDATA } from "../../../utils/data.constant";
 import { useState } from "react";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { getWebBanner } from "../../../utils/api";
+import { getMobBanner } from "../../../utils/api";
 
 
 export const BannerMob = () => {
@@ -15,7 +15,7 @@ export const BannerMob = () => {
     useEffect(() => {
       const getBanner = async () => {
         try {
-          const response = await getWebBanner();
+          const response = await getMobBanner();
           console.log(response);
           setData(response);
         } catch (error) {
@@ -42,6 +42,7 @@ export const BannerMob = () => {
 
 const BannerImg = styled.div`
   width: 100vw;
+  //height: 300px;
 
   img {
     width: 100%;
