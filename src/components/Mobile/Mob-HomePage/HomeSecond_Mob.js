@@ -125,10 +125,10 @@ const textDB = [
   },
   {
     id: 3,
-    text: "PARD는 기획자, 디자이너, 개발자가 모여\n Pay it Forward를 실천하는 \n대학생 IT 협업동아리입니다.",
+    text: "PARD는\n기획자, 디자이너, 개발자가 모여\nPay it Forward를 실천하는\n대학생 IT 협업동아리입니다.",
     breakPoint: firstScrollPoint + period1 + period2,
     period: period2 + period3,
-    posX: "43%",
+    posX: "40%",
     posY: "-30%",
   },
   {
@@ -240,7 +240,7 @@ const Text1 = styled.div`
 
   left: 0;
   right: 0;
-  margin-left: auto;
+  margin-left: -8px;
   margin-right: auto;
 
   top: ${({ textInfo }) => textInfo.posX};

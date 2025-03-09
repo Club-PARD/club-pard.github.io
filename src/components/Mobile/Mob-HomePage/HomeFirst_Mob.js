@@ -29,10 +29,15 @@ const HomeVideoMob = () => {
             />
           </VideoBackground>
         ) : (
-          <VideoBackgroundImg
-            src={require("../../../assets/Video/BackGroundVideo_Mob.mp4")}
-            alt="background"
-          />
+          <VideoBackground autoPlay loop muted playsInline>
+            <source
+              playsInline
+              muted
+              autoPlay
+              src={require("../../../assets/Video/BackGroundVideo_Mob.mp4")}
+              type="video/mp4"
+            />
+          </VideoBackground>
         )}
 
         <LogoDiv>
@@ -56,7 +61,7 @@ const VideoContainer = styled.div`
   margin: 0 auto;
   overflow: hidden;
   background-color: ${({ isColor }) =>
-    isColor ? "rgba(0, 0, 0, 0.4)" : "rgba(0, 0, 0, 0.4)"};
+    isColor ? "rgba(0, 0, 0, 0)" : "rgba(0, 0, 0, 0)"};
 `;
 
 const Container = styled.div`
@@ -66,20 +71,21 @@ const Container = styled.div`
 `;
 
 const VideoBackground = styled.video`
-  min-width: 420px;
+  min-width: 370px;
   height: 100%;
   object-fit: fill;
   z-index: -1;
   width: 100%;
+  margin-top: -30px;
 `;
 
-const VideoBackgroundImg = styled.img`
-  min-width: 420px;
-  height: 100%;
-  object-fit: fill;
-  z-index: -1;
-  width: 100%;
-`;
+// const VideoBackgroundImg = styled.img`
+//   min-width: 370px;
+//   height: 100%;
+//   object-fit: fill;
+//   z-index: -1;
+//   width: 100%;
+// `;
 
 const DownLogo = styled.img`
   width: 80px;
