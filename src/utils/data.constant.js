@@ -2,7 +2,7 @@ export const pardDATA = {
   currentGeneration: 5,
   displayBanner: true,
   // ready : 모집전 | progress : 모집중 | done : 모집완료
-  recruitStatus: "progress",
+  recruitStatus: "done",
 };
 
 // 사전 알림 구글 폼 URL

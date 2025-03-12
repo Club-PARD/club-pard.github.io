@@ -133,7 +133,7 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   color: white;
-  margin-top: 100px; //배너 내리면 비활성화
+  //margin-top: 100px; //배너 내리면 비활성화
   margin-bottom: 148px;
   display: flex;
 `;
@@ -145,7 +145,6 @@ const FilterContainer = styled.div`
   background-color: #fff;
   border-radius: 2000px;
   width: fit-content;
-  //margin-top: 50px; //배너 내리고 비활성화
 `;
 
 const ProjectList = styled.ul`

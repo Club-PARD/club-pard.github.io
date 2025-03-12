@@ -26,7 +26,7 @@ const NavBar_About = () => {
 
   return (
     <Div>
-      {pardDATA.displayBanner ? <BannerWeb /> : null}
+      {/*{pardDATA.displayBanner ? <BannerWeb /> : null}*/}
       <NavBarWrapper
         scrollPosition={scrollPosition}
         animatedPosition={animatedPosition}
@@ -121,7 +121,7 @@ const NavBarWrapper = styled.nav`
   border: 1px #263af3;
   border-left: none;
   border-right: none;
-  margin-top: ${pardDATA.displayBanner ? "100px" : "none"};
+  margin-top: none; //배너 시 100px
   min-width: 1280px;  // 📌 최소 너비 지정 (반응형 줄어들지 않도록)
   overflow-x: auto; 
 `;

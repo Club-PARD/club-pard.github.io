@@ -26,7 +26,7 @@ const NavBarMov_About = () => {
 
   return (
     <>
-      {pardDATA.displayBanner ? <BannerMob /> : null}
+      {/*{pardDATA.displayBanner ? <BannerMob /> : null}*/}
       <Nav
         scrollPosition={scrollPosition}
         animatedPosition={animatedPosition}
@@ -99,7 +99,7 @@ const Nav = styled.nav`
   height: 69px;
   z-index: 999;
   border: none;
-  margin-top: ${pardDATA.displayBanner ? "100px" : "none"};
+  margin-top: none; //100px banner
 `;
 
 const Logo = styled.div`

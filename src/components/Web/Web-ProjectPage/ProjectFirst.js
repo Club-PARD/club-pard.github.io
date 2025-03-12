@@ -59,7 +59,7 @@ const AboutLogo = styled.img`
   width: 1020.27px;
   height: 390px;
   margin-left: 1005px;
-  margin-top: ${pardDATA.displayBanner ? "240px" : "140px"};
+  margin-top: 140px; //240px banner
   transform: translate(-50%, -50%);
   opacity: 1;
   object-fit: contain;
@@ -75,7 +75,7 @@ const Div = styled.div`
 
 const TextContainer = styled.div`
   position: absolute;
-  top: ${pardDATA.displayBanner ? "475px" : "375px"};
+  top: 375px; //475 banner
   left: 50%;
   transform: translate(-50%, -50%);
 `;
