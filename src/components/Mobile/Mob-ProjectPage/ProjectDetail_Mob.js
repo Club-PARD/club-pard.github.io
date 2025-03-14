@@ -431,7 +431,7 @@ overflow-x: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 175px;
+  margin-top: 75px; //모집배너 있을시 175px
 `;
 
 const Div = styled.div`
