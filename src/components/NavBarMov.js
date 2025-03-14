@@ -14,7 +14,7 @@ const NavBarMov = () => {
 
   return (
     <div>
-      {/*{pardDATA.displayBanner ? <BannerMob /> : null}*/}
+      {pardDATA.displayBanner ? <BannerMob /> : null}
       <Nav isOpen={isOpen}>
         <ThemeProvider theme={theme}>
           <Logo>
@@ -74,7 +74,7 @@ const Nav = styled.nav`
   height: 69px;
   z-index: 999;
   border-bottom: none;
-  margin-top: none; //100px 배너
+  margin-top: ${pardDATA.displayBanner ? "100px" : "none"};
 `;
 
 const Logo = styled.div`
