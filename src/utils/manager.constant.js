@@ -92,7 +92,7 @@ export const managerData = [
   {
     id: 7,
     imgsrc: CSW,
-    name: "김수원",
+    name: "최수원",
     position: "ProductManager",
     position_k: "기획 파트장",
     site: [
