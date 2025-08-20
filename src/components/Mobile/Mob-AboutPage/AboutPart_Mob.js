@@ -1,9 +1,9 @@
 import styled, { ThemeProvider } from "styled-components";
 import { theme } from "../../../styles/theme";
 import React, { useState } from "react";
-import PM from "../../../assets/img/PM_info.png";
-import Web from "../../../assets/img/WEB_info.png";
-import Design from "../../../assets/img/Design_info.png";
+import PM from "../../../assets/img/PM_Info.png";
+import Web from "../../../assets/img/WEB_Info.png";
+import Design from "../../../assets/img/Design_Info.png";
 import App from "../../../assets/img/iOS_info.png";
 import Server from "../../../assets/img/Server_info.png";
 
