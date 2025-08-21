@@ -8,7 +8,7 @@ import Cat from "../../../assets/img/CatPic.png";
 function RecruitingIdealMob() {
   const handleLinkClick = () => {
     window.location.href =
-      "https://drive.google.com/drive/folders/1jFbQt0j6Ojxf2YkMc-rmHQXaaM24Cqqs";
+      "https://drive.google.com/drive/u/0/folders/1qjJ5pwBMjaqI6mIaQqzcWa9MAruoli_4";
   };
   return (
     <Div>

@@ -4,7 +4,7 @@ import React from "react";
 
 function RecruitingSecond() {
   const handleClick = () => {
-    window.open("https://we-pard.notion.site/PARD-5-1939fe7667e680cc9180df982a19753c", "_blank");
+    window.open("https://we-pard.notion.site/PARD-6-24c9fe7667e6811095cff5f32479df8b", "_blank");
   };
   return (
     <Div>
@@ -13,7 +13,7 @@ function RecruitingSecond() {
           <Header7>파드와 함께하는 여정을 소개해요.</Header7>
 
           <Header61>
-            2025년도 3월부터 7월까지 활동할 5기 멤버들을 모집합니다
+            2025년 9월부터 2026년 1월까지 활동할 6기 멤버들을 모집합니다.
             <br></br>* 일부 일정 변동 가능
           </Header61>
 
@@ -34,7 +34,7 @@ function RecruitingSecond() {
                 </Icon1B>
               </IconWrap>
               <Box1>서류접수</Box1>
-              <BoxText>3/8(토) ~ 3/11(화)</BoxText>
+              <BoxText>8/19(화) ~ 9/9(화)</BoxText>
             </Box>
             <Box style={{ border: "2px solid rgba(100, 197, 154, 0.4)" }}>
               <IconWrap>
@@ -58,7 +58,8 @@ function RecruitingSecond() {
                 </Icon2B>
               </IconWrap>
               <Box2>서류 합격 발표</Box2>
-              <BoxText>3/12(수) 오전</BoxText>
+              <BoxText>1차: 9/3(수)</BoxText>
+              <BoxText>2차: 9/10(수)</BoxText>
             </Box>
             <Box style={{ border: "2px solid rgba(100, 197, 154, 0.7)" }}>
               <IconWrap>
@@ -70,7 +71,8 @@ function RecruitingSecond() {
                 </Icon3>
               </IconWrap>
               <Box3>면접</Box3>
-              <BoxText>3/13(목) ~ 3/14(금)</BoxText>
+              <BoxText>1차: 9/5(금) ~ 9/6(토)</BoxText>
+              <BoxText>2차: 9/11(목) ~ 9/12(금)</BoxText>
             </Box>
             <Box style={{ border: "2px solid rgba(100, 197, 154, 1.0)" }}>
               <IconWrap>
@@ -92,7 +94,8 @@ function RecruitingSecond() {
                 </Icon4B>
               </IconWrap>
               <Box4>최종합격 발표</Box4>
-              <BoxText>3/14(금)</BoxText>
+              <BoxText>1차: 9/7(일)</BoxText>
+              <BoxText>2차: 9/12(금)</BoxText>
             </Box>
           </Container>
           <Plus onClick={handleClick}>
@@ -214,7 +217,7 @@ const Container = styled.div`
 
 const Box = styled.div`
   width: 240px;
-  height: 100px;
+  height: 120px;
   font-size: ${(props) => props.theme.Web_fontSizes.Header6};
   font-weight: ${(props) => props.theme.fontWeights.Header6};
   color: #ffffff;
@@ -275,8 +278,8 @@ const Number = styled.div`
 `;
 
 const BoxText = styled.div`
-  font-size: ${(props) => props.theme.Web_fontSizes.Body2};
-  font-weight: ${(props) => props.theme.fontWeights.Body2};
+  font-size: ${(props) => props.theme.Web_fontSizes.Body};
+  font-weight: ${(props) => props.theme.fontWeights.Body};
   color: #ffffff;
   font-family: "NanumSquare Neo";
   font-style: normal;

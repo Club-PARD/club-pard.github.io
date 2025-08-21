@@ -39,7 +39,7 @@ function RecruitingAbout() {
           quest: <>Q.&nbsp; 지원 조건이 어떻게 되나요?</>,
           answer: (
             <>
-              A. 5기 기준 2025년도
+              A. 6기 기준 2025년도
               <br />
               &nbsp; &nbsp; &nbsp;만 18세에서 만 30세이면 지원 가능합니다.
             </>
@@ -51,7 +51,7 @@ function RecruitingAbout() {
           quest: (
             <>
               {" "}
-              Q. &nbsp;한번에 여러파트로 중복 지원이 <br></br>
+              Q. &nbsp;한번에 여러 파트로 중복 지원이 <br></br>
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;가능할까요?
             </>
           ),
@@ -62,9 +62,9 @@ function RecruitingAbout() {
               &nbsp; &nbsp; &nbsp;예비 지원자님 정말 멋지십니다!
               <br />
               &nbsp; &nbsp; &nbsp;하지만 아쉽게도 중복 지원은 어렵습니다. <br />
-              &nbsp; &nbsp; &nbsp;5기는 먼저 배우고 싶은 파트를,
+              &nbsp; &nbsp; &nbsp;6기는 먼저 배우고 싶은 파트를,
               <br />
-              &nbsp; &nbsp; &nbsp;6기에는 다른 파트에 지원해 보시는 <br />
+              &nbsp; &nbsp; &nbsp;7기에는 다른 파트에 지원해 보시는 <br />
               &nbsp; &nbsp; &nbsp;건 어떨까요?
             </>
           ),
@@ -134,10 +134,10 @@ function RecruitingAbout() {
               A. 활동 멤버 분들이 속한 구성원 분들의 수가 <br />
               &nbsp; &nbsp; &nbsp;많은 곳에서 주요 활동을 진행하고 있습니다.{" "}
               <br />
-              &nbsp; &nbsp; &nbsp;5기는 한동대학교에서 모일 예정입니다. <br />
+              &nbsp; &nbsp; &nbsp;6기는 한동대학교에서 모일 예정입니다. <br />
               &nbsp; &nbsp; &nbsp;교통이 불편한 포항 여건 상, 파드는 포항시에{" "}
               <br />
-              &nbsp; &nbsp; &nbsp;소재한 한동대학교 외 5기 분들에게는 매주
+              &nbsp; &nbsp; &nbsp;소재한 한동대학교 외 6기 분들에게는 매주
               <br />
               &nbsp; &nbsp; &nbsp;교통비(택시비)를 일부 지원해드릴 예정입니다!{" "}
               <br />
@@ -212,7 +212,7 @@ function RecruitingAbout() {
           ),
           answer: (
             <>
-              A. 5기 기준 iOS 앱 개발을 위한 <br />
+              A. 6기 기준 iOS 앱 개발을 위한 <br />
               &nbsp; &nbsp; &nbsp;Swift UI를 사용하고 있습니다.
             </>
           ),

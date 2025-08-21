@@ -8,7 +8,7 @@ import Cat from "../../../assets/img/CatPic.png";
 function RecruitingIdeal() {
   const handleClick = () => {
     window.open(
-      "https://drive.google.com/drive/folders/1jFbQt0j6Ojxf2YkMc-rmHQXaaM24Cqqs",
+      "https://drive.google.com/drive/u/0/folders/1qjJ5pwBMjaqI6mIaQqzcWa9MAruoli_4",
       "_blank"
     );
   };
