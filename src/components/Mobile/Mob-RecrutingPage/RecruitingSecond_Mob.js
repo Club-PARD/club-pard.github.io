@@ -4,7 +4,7 @@ import React from "react";
 
 function RecruitingSecond() {
   const handleClick = () => {
-    window.open("https://we-pard.notion.site/PARD-5-1939fe7667e680cc9180df982a19753c", "_blank");
+    window.open("https://we-pard.notion.site/PARD-6-24c9fe7667e6811095cff5f32479df8b", "_blank");
   };
   return (
     <Div>
@@ -36,7 +36,7 @@ function RecruitingSecond() {
                 </Icon1B>
               </IconWrap>
               <Box1>서류접수</Box1>
-              <BoxText1>8/19(화) ~ 9/9(화)</BoxText1>
+              <BoxText>8/19(화) ~ 9/9(화)</BoxText>
             </Box>
             <Box
               style={{
@@ -65,8 +65,8 @@ function RecruitingSecond() {
                 </Icon2B>
               </IconWrap>
               <Box2>서류 합격 발표</Box2>
-              <BoxText1>1차: 9/3(수)</BoxText1>
-              <BoxText1>2차: 9/10(수)</BoxText1>
+              <BoxText>1차: 9/3(수)</BoxText>
+              <BoxText>2차: 9/10(수)</BoxText>
             </Box>
             <Box
               style={{
@@ -83,8 +83,8 @@ function RecruitingSecond() {
                 </Icon3>
               </IconWrap>
               <Box3>면접</Box3>
-              <BoxText1>1차: 9/5(금) ~ 9/6(토)</BoxText1>
-              <BoxText1>2차: 9/11(목) ~ 9/12(금)</BoxText1>
+              <BoxText>1차: 9/5(금) ~ 9/6(토)</BoxText>
+              <BoxText>2차: 9/11(목) ~ 9/12(금)</BoxText>
             </Box>
             <Box
               style={{
@@ -111,8 +111,8 @@ function RecruitingSecond() {
                 </Icon4B>
               </IconWrap>
               <Box4>최종합격 발표</Box4>
-              <BoxText1>1차: 9/7(일)</BoxText1>
-              <BoxText1>2차:9/12(금)</BoxText1>
+              <BoxText>1차: 9/7(일)</BoxText>
+              <BoxText>2차: 9/12(금)</BoxText>
             </Box>
           </Container>
 
@@ -288,22 +288,6 @@ const Number = styled.div`
 `;
 
 const BoxText = styled.div`
-  font-size: ${(props) => props.theme.Mob_fontSizes.Body2};
-  font-weight: ${(props) => props.theme.fontWeights.Body2};
-  color: #ffffff;
-  font-family: "NanumSquare Neo";
-  font-style: normal;
-  line-height: 140%;
-  white-space: nowrap;
-  margin-left: 60px;
-  margin-top: 6px;
-
-  span.highlight {
-    color: #64c59a;
-  }
-`;
-
-const BoxText1 = styled.div`
   font-size: ${(props) => props.theme.Mob_fontSizes.Body3};
   font-weight: ${(props) => props.theme.fontWeights.Body3};
   color: #ffffff;
