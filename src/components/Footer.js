@@ -16,7 +16,7 @@ function Footer() {
               </FooterLogoRules>
               <Information>
                 PARD (파드, Pay it forward를 실천하는 IT협업 동아리) ⓒPARD.
-                2024.All rights reserved.
+                2025.All rights reserved.
               </Information>
             </LeftComponent>
             <RightFooter>

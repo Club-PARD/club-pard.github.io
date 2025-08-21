@@ -23,7 +23,7 @@ function HomeLast() {
             {/* ✅ 애니메이션 없이 고정된 숫자 */}
             <InfoBox>
               <InfoContent>런칭 서비스</InfoContent>
-              <InfoNumStatic>20개</InfoNumStatic>
+              <InfoNumStatic>25개</InfoNumStatic>
             </InfoBox>
             <InfoBox>
               <InfoContent>운영 기수</InfoContent>
@@ -31,7 +31,7 @@ function HomeLast() {
             </InfoBox>
             <InfoBox>
               <InfoContent>누적 활동 인원</InfoContent>
-              <InfoNumStatic>134명</InfoNumStatic>
+              <InfoNumStatic>152명</InfoNumStatic>
             </InfoBox>
           </InfoWrap>
           <Line>
