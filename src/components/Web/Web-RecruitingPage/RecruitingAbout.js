@@ -30,7 +30,7 @@ function RecruitingAbout() {
           quest: "Q. 지원 조건이 어떻게 되나요?",
           answer: (
             <>
-              A. 5기 기준 2025년도 만 18세에서 만
+              A. 6기 기준 2025년도 만 18세에서 만
               30세이면 지원 가능합니다.
             </>
           ),
@@ -38,15 +38,15 @@ function RecruitingAbout() {
         },
         {
           id: 3,
-          quest: "Q. 한번에 여러파트로 중복 지원이 가능할까요?",
+          quest: "Q. 한번에 여러 파트로 중복 지원이 가능할까요?",
           answer: (
             <>
               A. 다양한 분야로 관심이 많으신 예비 지원자님 정말 멋지십니다!
               <br />
-              &nbsp; &nbsp; &nbsp;하지만 아쉽게도 중복 지원은 어렵습니다. 5기는
+              &nbsp; &nbsp; &nbsp;하지만 아쉽게도 중복 지원은 어렵습니다. 6기는
               먼저 배우고 싶은 파트를,
               <br />
-              &nbsp; &nbsp; &nbsp;6기에는 다른 파트에 지원해 보시는 건 어떨까요?
+              &nbsp; &nbsp; &nbsp;7기에는 다른 파트에 지원해 보시는 건 어떨까요?
             </>
           ),
           select: false,
@@ -96,10 +96,10 @@ function RecruitingAbout() {
           answer: (
             <>
               A. 활동 멤버 분들이 속한 구성원 분들의 수가 많은 곳에서 주요
-              활동을 진행하고 있습니다. 5기는 한동대학교에서
+              활동을 진행하고 있습니다. 6기는 한동대학교에서
               <br />
               &nbsp; &nbsp; &nbsp;모일 예정입니다. 교통이 불편한 포항 여건 상,
-              파드는 포항시에 소재한 한동대학교 외 5기 분들에게는 매주 <br />
+              파드는 포항시에 소재한 한동대학교 외 6기 분들에게는 매주 <br />
               &nbsp; &nbsp; &nbsp;교통비(택시비)를 일부 지원해드릴 예정입니다!
               많은 지원 부탁드릴게요:) &nbsp; &nbsp; &nbsp;
             </>
@@ -153,7 +153,7 @@ function RecruitingAbout() {
           id: 5,
           quest: "Q. 앱(iOS) 개발 시 어떤 프로그래밍 언어를 사용하나요?",
           answer:
-            "A. 5기 기준 iOS 앱 개발을 위한 Swift UI를 사용하고 있습니다.",
+            "A. 6기 기준 iOS 앱 개발을 위한 Swift UI를 사용하고 있습니다.",
           select: false,
         },
       ],
