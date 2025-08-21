@@ -8,6 +8,7 @@ import AsanImg from "../../../assets/img/ASANImg.png";
 import NextChallengeImg from "../../../assets/img/NextChallengeImg.png";
 import dCamp from "../../../assets/img/dCamp.png";
 import AWS from "../../../assets/img/AWS_logo.PNG";
+import GyeongbukImg from "../../../assets/img/GyeongbukContentImg.png";
 
 function HomePartner() {
   const handleClickSpark = () => {
@@ -33,6 +34,9 @@ function HomePartner() {
   };
   const handleClickAWS = () => {
     window.open("https://aws.amazon.com/ko/?nc2=h_lg", "_blank");
+  };
+  const handleClickGyeongbuk = () => {
+    window.open("https://www.gbcep.or.kr/");
   };
 
   const handleClick = () => {
@@ -69,6 +73,7 @@ function HomePartner() {
         <ContentWrapper3>
           <Dcamp onClick={handleClickDcamp} src={dCamp} alt="dCamp" />
           <AWSImg onClick={handleClickAWS} src={AWS} alt="AWS" />
+          <GyeongbukImgDiv onClick={handleClickGyeongbuk} src={GyeongbukImg} alt="Gyeongbuk" />
         </ContentWrapper3>
         <ButtonDiv>
           <div style={{ width: "360px" }}>
@@ -162,6 +167,12 @@ const AsanImgDiv = styled.img`
   width: 223px;
   height: 90px;
   margin-right: 65px;
+  cursor: pointer;
+`;
+
+const GyeongbukImgDiv = styled.img`
+  width: 250px;
+  margin-left: 30px;
   cursor: pointer;
 `;
 

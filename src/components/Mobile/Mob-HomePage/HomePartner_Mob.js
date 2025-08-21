@@ -11,6 +11,7 @@ import NextChallengeImg from "../../../assets/img/NextChallengeImg.png";
 import PickPly from "../../../assets/img/Pickply_Img.png";
 import dCamp from "../../../assets/img/dCamp.png";
 import AWS from "../../../assets/img/AWS_logo.PNG";
+import GyeongbukImg from "../../../assets/img/GyeongbukContentImg.png";
 
 function HomePartnerMob() {
   const handleClickSpark = () => {
@@ -44,8 +45,15 @@ function HomePartnerMob() {
     window.open("https://dcamp.kr/", "_blank");
   };
   const handleClickAWS = () => {
-    window.open("https://aws.amazon.com/ko/free/?gclid=Cj0KCQiA-5a9BhCBARIsACwMkJ5dcnUOTEANjDAzC9lgVnQh9AdBFb-VYpSZc37HyZrLWINPsS0tAOcaAshuEALw_wcB&trk=fa2d6ba3-df80-4d24-a453-bf30ad163af9&sc_channel=ps&ef_id=Cj0KCQiA-5a9BhCBARIsACwMkJ5dcnUOTEANjDAzC9lgVnQh9AdBFb-VYpSZc37HyZrLWINPsS0tAOcaAshuEALw_wcB:G:s&s_kwcid=AL!4422!3!563761819834!e!!g!!aws!15286221779!129400439466&all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all", "_blank");
+    window.open(
+      "https://aws.amazon.com/ko/free/?gclid=Cj0KCQiA-5a9BhCBARIsACwMkJ5dcnUOTEANjDAzC9lgVnQh9AdBFb-VYpSZc37HyZrLWINPsS0tAOcaAshuEALw_wcB&trk=fa2d6ba3-df80-4d24-a453-bf30ad163af9&sc_channel=ps&ef_id=Cj0KCQiA-5a9BhCBARIsACwMkJ5dcnUOTEANjDAzC9lgVnQh9AdBFb-VYpSZc37HyZrLWINPsS0tAOcaAshuEALw_wcB:G:s&s_kwcid=AL!4422!3!563761819834!e!!g!!aws!15286221779!129400439466&all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all",
+      "_blank"
+    );
   };
+  const handleClickGyeongbuk = () => {
+    window.open("https://www.gbcep.or.kr/");
+  };
+
   const handleClick = () => {
     window.open("mailto:official@we-pard.com", "_blank");
   };
@@ -88,6 +96,11 @@ function HomePartnerMob() {
             /> */}
             <Dcamp onClick={handleClickDcamp} src={dCamp} alt="dCamp" />
             <AWSImg onClick={handleClickAWS} src={AWS} alt="AWS" />
+            <Gyeongbuk
+              onClick={handleClickGyeongbuk}
+              src={GyeongbukImg}
+              alt="Gyeongbuk"
+            />
           </ContentWrapper>
           <Button1 onClick={handleClick}>후원 문의하기</Button1>
         </ThemeProvider>
@@ -109,12 +122,12 @@ const Header7 = styled.div`
 `;
 
 const Subtitle3 = styled.div`
-color: #FFF;
-font-family: "NanumSquare Neo";
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: 155%; /* 31px */
+  color: #fff;
+  font-family: "NanumSquare Neo";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 155%; /* 31px */
   white-space: pre-line;
   text-align: center;
 `;
@@ -197,10 +210,10 @@ const ContentWrapper = styled.div`
   gap: 20px;
   margin-top: 43px;
   width: 325.864px;
-height: 310.197px;
-justify-items: center;
-align-items: center;
-flex-shrink: 0;
+  height: 310.197px;
+  justify-items: center;
+  align-items: center;
+  flex-shrink: 0;
 `;
 
 const AWSImg = styled.img`
@@ -212,6 +225,11 @@ const AWSImg = styled.img`
 const Dcamp = styled.img`
   width: 119px;
   height: auto;
+  cursor: pointer;
+`;
+
+const Gyeongbuk = styled.img`
+  width: 140px;
   cursor: pointer;
 `;
 
