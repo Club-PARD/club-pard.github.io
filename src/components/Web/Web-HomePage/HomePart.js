@@ -34,7 +34,7 @@ function HomePart() {
       imageSrc: WEBImage,
       title: "웹(WEB)",
       description:
-        "사용자를 위한 웹 UI를 설계하고,\n문제를 해결하는 React 기반\n웹 서비스를 개발합니다.",
+        "사용자를 위한 웹 UI를 설계하고,\n문제를 해결하는 Next와\nTypescript 기반 웹 서비스를\n개발합니다.",
     },
     {
       id: 5,

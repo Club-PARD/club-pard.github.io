@@ -10,7 +10,7 @@ function FooterMov() {
         </PardLogo>
       </TopComponent>
       <Information>
-        PARD (파드, Pay it forward를 실천하는 IT협업 동아리) ⓒPARD. 2024.All
+        PARD (파드, Pay it forward를 실천하는 IT협업 동아리) ⓒPARD. 2025.All
         rights reserved.
       </Information>
       <Links>
