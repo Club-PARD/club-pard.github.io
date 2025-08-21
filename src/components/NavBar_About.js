@@ -26,7 +26,7 @@ const NavBar_About = () => {
 
   return (
     <Div>
-      {/*{pardDATA.displayBanner ? <BannerWeb /> : null}*/}
+      {/* {pardDATA.displayBanner ? <BannerWeb /> : null} */}
       <NavBarWrapper
         scrollPosition={scrollPosition}
         animatedPosition={animatedPosition}

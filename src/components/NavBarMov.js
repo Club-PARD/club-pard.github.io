@@ -14,7 +14,7 @@ const NavBarMov = () => {
 
   return (
     <div>
-      {/*{pardDATA.displayBanner ? <BannerMob /> : null}*/}
+      {/* {pardDATA.displayBanner ? <BannerMob /> : null} */}
       <Nav isOpen={isOpen}>
         <ThemeProvider theme={theme}>
           <Logo>

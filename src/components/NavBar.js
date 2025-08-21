@@ -25,7 +25,7 @@ const NavBar = () => {
 
   return (
     <Div>
-      {/*{pardDATA.displayBanner ? <BannerWeb /> : null}*/}
+      {/* {pardDATA.displayBanner ? <BannerWeb /> : null} */}
       <NavBarWrapper scrollPosition={scrollPosition}>
         <ThemeProvider theme={theme}>
           <NavDiv>
