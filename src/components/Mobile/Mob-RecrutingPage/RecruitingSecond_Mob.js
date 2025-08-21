@@ -15,7 +15,7 @@ function RecruitingSecond() {
           </Header8>
 
           <Subtitle2>
-            2025년도 3월부터 7월까지 활동할<br></br>5기 멤버들을 모집합니다.
+            2025년 9월부터 2026년 1월까지 활동할 6기 멤버들을 모집합니다.
             <br></br>* 일부 일정 변동 가능
           </Subtitle2>
 
@@ -36,7 +36,7 @@ function RecruitingSecond() {
                 </Icon1B>
               </IconWrap>
               <Box1>서류접수</Box1>
-              <BoxText>3/8(토) ~ 3/11(화)</BoxText>
+              <BoxText1>8/19(화) ~ 9/9(화)</BoxText1>
             </Box>
             <Box
               style={{
@@ -65,7 +65,8 @@ function RecruitingSecond() {
                 </Icon2B>
               </IconWrap>
               <Box2>서류 합격 발표</Box2>
-              <BoxText>3/12(수)</BoxText>
+              <BoxText1>1차: 9/3(수)</BoxText1>
+              <BoxText1>2차: 9/10(수)</BoxText1>
             </Box>
             <Box
               style={{
@@ -82,7 +83,8 @@ function RecruitingSecond() {
                 </Icon3>
               </IconWrap>
               <Box3>면접</Box3>
-              <BoxText>3/13(목) ~ 3/14(금)</BoxText>
+              <BoxText1>1차: 9/5(금) ~ 9/6(토)</BoxText1>
+              <BoxText1>2차: 9/11(목) ~ 9/12(금)</BoxText1>
             </Box>
             <Box
               style={{
@@ -109,7 +111,8 @@ function RecruitingSecond() {
                 </Icon4B>
               </IconWrap>
               <Box4>최종합격 발표</Box4>
-              <BoxText>3/14(금)</BoxText>
+              <BoxText1>1차: 9/7(일)</BoxText1>
+              <BoxText1>2차:9/12(금)</BoxText1>
             </Box>
           </Container>
 
@@ -227,8 +230,8 @@ const Container = styled.div`
 `;
 
 const Box = styled.div`
-  width: 200px;
-  height: 70px;
+  width: 220px;
+  height: 100px;
   border: 2px solid #64c59a;
   border-radius: 20px;
   margin-left: 36px;
@@ -287,6 +290,22 @@ const Number = styled.div`
 const BoxText = styled.div`
   font-size: ${(props) => props.theme.Mob_fontSizes.Body2};
   font-weight: ${(props) => props.theme.fontWeights.Body2};
+  color: #ffffff;
+  font-family: "NanumSquare Neo";
+  font-style: normal;
+  line-height: 140%;
+  white-space: nowrap;
+  margin-left: 60px;
+  margin-top: 6px;
+
+  span.highlight {
+    color: #64c59a;
+  }
+`;
+
+const BoxText1 = styled.div`
+  font-size: ${(props) => props.theme.Mob_fontSizes.Body3};
+  font-weight: ${(props) => props.theme.fontWeights.Body3};
   color: #ffffff;
   font-family: "NanumSquare Neo";
   font-style: normal;
