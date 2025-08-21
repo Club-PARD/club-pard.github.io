@@ -26,7 +26,7 @@ const NavBarMov_About = () => {
 
   return (
     <>
-      {/*{pardDATA.displayBanner ? <BannerMob /> : null}*/}
+      {/* {pardDATA.displayBanner ? <BannerMob /> : null} */}
       <Nav
         scrollPosition={scrollPosition}
         animatedPosition={animatedPosition}
