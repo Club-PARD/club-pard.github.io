@@ -1,172 +1,25 @@
-import PSH from "../assets/img/headers/PSH.png";
-import KGY from "../assets/img/headers/KGY.png";
-import KDW from "../assets/img/headers/KDW.png";
-import PIK from "../assets/img/headers/PIK.png";
-import LJI from "../assets/img/headers/LJI.png";
-import SJH from "../assets/img/headers/SJH.png";
-import CSW from "../assets/img/headers/CSW.png";
-import KHM from "../assets/img/headers/KHM.png";
-import KYJ from "../assets/img/headers/KYJ.png";
-import LYS from "../assets/img/headers/LYS.png";
-import KCE from "../assets/img/headers/KCE.png";
-import KWH from "../assets/img/headers/KWH.png";
-import YJH from "../assets/img/headers/YJH.png";
-import LYH from "../assets/img/headers/LYH.png";
-import KNI from "../assets/img/headers/KNI.png";
+import CJW from "../assets/img/headers/CJW.png";
+import CJY from "../assets/img/headers/CJY.png";
+import COT from "../assets/img/headers/COT.png";
+import CSH from "../assets/img/headers/CSH.png";
+import CYY from "../assets/img/headers/CYY.png";
+import HYM from "../assets/img/headers/HYM.png";
+import KJE from "../assets/img/headers/KJE.png";
+import KKD from "../assets/img/headers/KKD.png";
 import KMG from "../assets/img/headers/KMG.png";
+import LJI from "../assets/img/headers/LJI.png";
+import LYI from "../assets/img/headers/LYI.png";
+import LYS from "../assets/img/headers/LYS.png";
+import PIK from "../assets/img/headers/PIK.png";
+import YJH from "../assets/img/headers/YJH.png";
 
 export const managerData = [
   {
     id: 1,
-    imgsrc: PSH,
-    name: "박성현",
-    position: "Operator",
-    position_k: "회장",
-    site: [
-      { name: "email", 
-        link: "seonghyeonbag39@gmail.com" 
-      },
-    ],
-  },
-  {
-    id: 2,
-    imgsrc: KGY,
-    name: "김기영",
-    position: "Operator",
-    position_k: "부회장",
-    site: [
-      { name: "email", 
-        link: "cla12093@gmail.com" 
-      },
-    ],
-  },
-
-  {
-    id: 3,
-    imgsrc: KDW,
-    name: "김도원",
-    position: "Operator",
-    position_k: "운영진",
-    site: [
-      { name: "email", 
-        link: "hooked0135@gmail.com" 
-      },
-    ],
-  },
-  {
-    id: 4,
-    imgsrc: PIK,
-    name: "박인권",
-    position: "Operator",
-    position_k: "운영진",
-    site: [
-      { name: "email", 
-        link: "22100290@handong.ac.kr" 
-      },
-    ],
-  },
-  {
-    id: 5,
-    imgsrc: LJI,
-    name: "이지인",
-    position: "Operator",
-    position_k: "운영진",
-    site: [
-      { name: "email", 
-        link: "jiin1129@handong.ac.kr" 
-      },
-    ],
-  },
-  {
-    id: 6,
-    imgsrc: SJH,
-    name: "손주하",
-    position: "Operator",
-    position_k: "BX 디자이너",
-    site: [
-      { name: "email", 
-        link: "juhason6625@gmail.com" 
-      },
-    ],
-  },
-  {
-    id: 7,
-    imgsrc: CSW,
-    name: "최수원",
-    position: "ProductManager",
-    position_k: "기획 파트장",
-    site: [
-      { name: "email", 
-        link: "tndnjsc03@gmail.com" 
-      },
-    ],
-  },
-  {
-    id: 8,
-    imgsrc: KHM,
-    name: "김희민",
-    position: "ProductManager",
-    position_k: "기획 부파트장",
-    site: [
-      { name: "email", 
-        link: "22100243@handong.ac.kr" 
-      },
-    ],
-  },
-  {
-    id: 9,
-    imgsrc: KYJ,
-    name: "김예정",
-    position: "Designer",
-    position_k: "디자인 파트장",
-    site: [
-      { name: "email", 
-        link: "yejomee22@gmail.com" 
-      },
-    ],
-  },
-  {
-    id: 10,
-    imgsrc: LYS,
-    name: "이윤서",
-    position: "Designer",
-    position_k: "디자인 부파트장",
-    site: [
-      { name: "email", 
-        link: "ckcunice@gmail.com" 
-      },
-    ],
-  },
-  {
-    id: 11,
-    imgsrc: KCE,
-    name: "권채은",
-    position: "Developer",
-    position_k: "웹 파트장",
-    site: [
-      { name: "email", 
-        link: "chenlover0615@gmail.com" 
-      },
-    ],
-  },
-  {
-    id: 12,
-    imgsrc: KWH,
-    name: "김우현",
-    position: "Developer",
-    position_k: "웹 부파트장",
-    site: [
-      { name: "email", 
-        link: "kwh77974481@gmail.com" 
-      },
-    ],
-  },
-  {
-    id: 13,
     imgsrc: YJH,
     name: "유재혁",
-    position: "Developer",
-    position_k: "iOS 파트장",
+    position: "Operator",
+    position_k: "회장",
     site: [
       { name: "email", 
         link: "yoojh5685@gmail.com" 
@@ -174,38 +27,159 @@ export const managerData = [
     ],
   },
   {
-    id: 14,
-    imgsrc: LYH,
-    name: "이유현",
+    id: 2,
+    imgsrc: LJI,
+    name: "이지인",
+    position: "Operator",
+    position_k: "부회장",
+    site: [
+      { name: "email", 
+        link: "jiin1129@handong.ac.kr" 
+      },
+    ],
+  },
+
+  {
+    id: 3,
+    imgsrc: CJY,
+    name: "최준영",
+    position: "Operator",
+    position_k: "운영진",
+    site: [
+      { name: "email", 
+        link: "junyoung833@gmail.com" 
+      },
+    ],
+  },
+  {
+    id: 4,
+    imgsrc: LYI,
+    name: "이예인",
+    position: "Operator",
+    position_k: "운영진",
+    site: [
+      { name: "email", 
+        link: "yein534@handong.ac.kr" 
+      },
+    ],
+  },
+  {
+    id: 5,
+    imgsrc: CYY,
+    name: "조예영",
+    position: "Operator",
+    position_k: "BX 디자이너",
+    site: [
+      { name: "email", 
+        link: "elahep5@naver.com" 
+      },
+    ],
+  },
+  {
+    id: 6,
+    imgsrc: CJW,
+    name: "최지우",
+    position: "ProductManager",
+    position_k: "기획 파트장",
+    site: [
+      { name: "email", 
+        link: "jiu.direct@handong.ac.kr" 
+      },
+    ],
+  },
+  {
+    id: 7,
+    imgsrc: PIK,
+    name: "박인권",
+    position: "ProductManager",
+    position_k: "기획 부파트장",
+    site: [
+      { name: "email", 
+        link: "22100290@handong.ac.kr" 
+      },
+    ],
+  },
+  {
+    id: 8,
+    imgsrc: LYS,
+    name: "이윤서",
+    position: "Designer",
+    position_k: "디자인 파트장",
+    site: [
+      { name: "email", 
+        link: "ckcunice@gmail.com" 
+      },
+    ],
+  },
+  {
+    id: 9,
+    imgsrc: HYM,
+    name: "황유민",
+    position: "Developer",
+    position_k: "웹 파트장",
+    site: [
+      { name: "email", 
+        link: "yoominh3@gmail.com" 
+      },
+    ],
+  },
+  {
+    id: 10,
+    imgsrc: COT,
+    name: "최옥토",
+    position: "Developer",
+    position_k: "웹 부파트장",
+    site: [
+      { name: "email", 
+        link: "okto@handong.ac.kr" 
+      },
+    ],
+  },
+  {
+    id: 11,
+    imgsrc: CSH,
+    name: "조성호",
+    position: "Developer",
+    position_k: "iOS 파트장",
+    site: [
+      { name: "email", 
+        link: "bluecho97@gmail.com" 
+      },
+    ],
+  },
+  {
+    id: 12,
+    imgsrc: KKD,
+    name: "김경동",
     position: "Developer",
     position_k: "iOS 부파트장",
     site: [
       { name: "email", 
-        link: "youhyeon071@gmail.com" 
+        link: "lighttreekim@gmail.com" 
       },
     ],
   },
   {
-    id: 15,
-    imgsrc: KNI,
-    name: "김나임",
+    id: 13,
+    imgsrc: KMG,
+    name: "김민규",
     position: "Developer",
     position_k: "서버 파트장",
     site: [
       { name: "email", 
-        link: "naimk5451@gmail.com" 
+        link: "22000071@handong.ac.kr" 
       },
     ],
   },
   {
-    id: 16,
-    imgsrc: KMG,
-    name: "김민규",
+    id: 14,
+    imgsrc: KJE,
+    name: "김종언",
     position: "Developer",
     position_k: "서버 부파트장",
     site: [
       { name: "email", 
-        link: "22000071@handong.ac.kr" 
+        link: "whddjs03@handong.ac.kr" 
       },
     ],
   },
