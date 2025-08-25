@@ -13,9 +13,9 @@ import AboutProgram_Mob from "../components/Mobile/Mob-AboutPage/AboutProgram_Mo
 import AboutMentor_Mob from "../components/Mobile/Mob-AboutPage/AboutMentor_Mob";
 import AboutLast_Mob from "../components/Mobile/Mob-AboutPage/AboutLast_Mob";
 import Footer from "../components/Footer";
-import FooterMov from "../components/FooterMov";
+import FooterMob from "../components/FooterMob";
 import NavBar_About from "../components/NavBar_About";
-import NavBarMov_About from "../components/NavBarMob_About";
+import NavBarMob_About from "../components/NavBarMob_About";
 
 function AboutPage() {
   const isDesktopOrMobile = useMediaQuery({ query: "(max-width:768px)" }); // 758px 이하일 때는 모바일 뷰 전환
@@ -48,14 +48,14 @@ function AboutPage() {
         </AboutPageComponent_Web>
       ) : (
         <AboutPageComponent_Mob>
-          <NavBarMov_About />
+          <NavBarMob_About />
           <AboutFirst_Mob />
           <AboutVision_Mob />
           <AboutPart_Mob />
           <AboutProgram_Mob />
           <AboutMentor_Mob />
           <AboutLast_Mob />
-          <FooterMov />
+          <FooterMob />
         </AboutPageComponent_Mob>
       )}
     </AboutPageComponent>

@@ -7,9 +7,10 @@ import InquiryLast from "../components/Web/Web-InquiryPage/InquriyLast";
 import InquiryContactMob from "../components/Mobile/Mob-InquiryPage/InquiryContact_Mob";
 import InquiryManagemaentMob from "../components/Mobile/Mob-InquiryPage/InquiryManagement_Mob";
 import InquiryLastMob from "../components/Mobile/Mob-InquiryPage/InquiryLast_Mob";
-import NavBarMov from "../components/NavBarMov";
+import NavBarMob from "../components/NavBarMob";
 import Footer from "../components/Footer";
-import FooterMov from "../components/FooterMov";
+import FooterMobWrapper from "../components/FooterMob";
+import FooterMob from "../components/FooterMob";
 
 function InquiryPage() {
   const isDesktopOrMobile = useMediaQuery({ query: "(max-width:768px)" }); // 758px 이하일 때는 모바일 뷰로 바뀐다.
@@ -26,11 +27,11 @@ function InquiryPage() {
         </InquiryPageComponent_Web>
       ) : (
         <InquiryPageComponent_Mob>
-          <NavBarMov />
+          <NavBarMob />
           <InquiryContactMob />
           <InquiryManagemaentMob />
           <InquiryLastMob />
-          <FooterMov />
+          <FooterMob />
         </InquiryPageComponent_Mob>
       )}
     </InquiryPageComponent>

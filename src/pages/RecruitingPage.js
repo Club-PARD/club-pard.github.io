@@ -1,7 +1,7 @@
 import Navbar from "../components/NavBar";
 import styled from "styled-components";
 import { useMediaQuery } from "react-responsive";
-import NavBarMov from "../components/NavBarMov";
+import NavBarMob from "../components/NavBarMob";
 import Footer from "../components/Footer";
 import RecruitingFirst from "../components/Web/Web-RecruitingPage/RecruitingFirst";
 import RecruitingSecond from "../components/Web/Web-RecruitingPage/RecruitingSecond";
@@ -17,7 +17,7 @@ import RecruitingPartMob from "../components/Mobile/Mob-RecrutingPage/Recruiting
 import RecruitingReviewMob from "../components/Mobile/Mob-RecrutingPage/RecruitingReview_Mob";
 import RecruitingAboutMob from "../components/Mobile/Mob-RecrutingPage/RecruitingAbout_Mob";
 import RecruitingLastMob from "../components/Mobile/Mob-RecrutingPage/RecruitingLast_Mob";
-import FooterMov from "../components/FooterMov";
+import FooterMob from "../components/FooterMob";
 
 function RecruitingPage() {
   const isDesktopOrMobile = useMediaQuery({ query: "(max-width:768px)" }); // 758px 이하일 때는 모바일 뷰로 바뀐다.
@@ -38,7 +38,7 @@ function RecruitingPage() {
         </RecruitingPageComponent_WEB>
       ) : (
         <RecruitingPageComponent_Mob>
-          <NavBarMov />
+          <NavBarMob />
           <RecruitingFirstMob />
           <RecruitingSecondMob />
           <RecruitingIdealMob />
@@ -46,7 +46,7 @@ function RecruitingPage() {
           <RecruitingReviewMob />
           <RecruitingAboutMob />
           <RecruitingLastMob />
-          <FooterMov />
+          <FooterMob />
         </RecruitingPageComponent_Mob>
       )}
     </RecruitingPageComponent>

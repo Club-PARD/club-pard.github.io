@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 
-function FooterMov() {
+function FooterMob() {
   return (
-    <FooterMovWrapper>
+    <FooterMobWrapper>
       <TopComponent>
         <PardLogo>
           <img src={require("../assets/img/Logo.png")} alt="Logo" />
@@ -31,13 +31,13 @@ function FooterMov() {
           DISQUIET
         </Disquiet>
       </Links>
-    </FooterMovWrapper>
+    </FooterMobWrapper>
   );
 }
 
-export default FooterMov;
+export default FooterMob;
 
-const FooterMovWrapper = styled.div`
+const FooterMobWrapper = styled.div`
   width: 100%;
   height: 222px;
   background-color: #2a2a2a;

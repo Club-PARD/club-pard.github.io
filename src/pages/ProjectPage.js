@@ -1,13 +1,13 @@
 import Navbar from "../components/NavBar";
 import styled from "styled-components";
 import { useMediaQuery } from "react-responsive";
-import NavBarMov from "../components/NavBarMov";
+import NavBarMob from "../components/NavBarMob";
 import Footer from "../components/Footer";
 import ProjectFirst from "../components/Web/Web-ProjectPage/ProjectFirst";
 import ProjectFirst_Mob from "../components/Mobile/Mob-ProjectPage/ProjectFirst_Mob";
 import ProjectLast_Mob from "../components/Mobile/Mob-ProjectPage/ProjectLast_Mob";
 import ProjectLast from "../components/Web/Web-ProjectPage/Project_Last";
-import FooterMov from "../components/FooterMov";
+import FooterMob from "../components/FooterMob";
 
 function ProjectPage() {
   const isDesktopOrMobile = useMediaQuery({ query: "(max-width:768px)" }); // 758px 이하일 때는 모바일 뷰로 바뀐다.
@@ -23,10 +23,10 @@ function ProjectPage() {
         </ProgramPageComponent_Web>
       ) : (
         <ProgramPageComponent_Mob>
-          <NavBarMov />
+          <NavBarMob />
           <ProjectFirst_Mob />
           <ProjectLast_Mob />
-          <FooterMov />
+          <FooterMob />
         </ProgramPageComponent_Mob>
       )}
     </AboutPageComponent>

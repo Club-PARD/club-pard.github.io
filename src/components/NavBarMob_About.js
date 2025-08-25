@@ -7,7 +7,7 @@ import MenuBar_black from "../assets/img/MenuBar_black.png";
 import { pardDATA } from "../utils/data.constant";
 import { BannerMob } from "./Mobile/Components/BannerMob";
 
-const NavBarMov_About = () => {
+const NavBarMob_About = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrollPosition, setScrollPosition] = useState(0);
   const animatedPosition = 630;
@@ -80,7 +80,7 @@ const NavBarMov_About = () => {
   );
 };
 
-export default NavBarMov_About;
+export default NavBarMob_About;
 
 const Nav = styled.nav`
   background-color: ${({ isOpen, scrollPosition, animatedPosition }) =>
@@ -99,7 +99,7 @@ const Nav = styled.nav`
   height: 69px;
   z-index: 999;
   border: none;
-  margin-top: 198px; // 배너 시 200px
+  margin-top: 130px; // 배너 시 130px
 `;
 
 const Logo = styled.div`

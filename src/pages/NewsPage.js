@@ -1,9 +1,9 @@
 import styled from "styled-components";
 import { useMediaQuery } from "react-responsive";
 import NavBar from "../components/NavBar";
-import NavBarMov from "../components/NavBarMov";
+import NavBarMob from "../components/NavBarMob";
 import Footer from "../components/Footer";
-import FooterMov from "../components/FooterMov";
+import FooterMob from "../components/FooterMob";
 import NewsTop from "../components/Web/Web-NewsPage/NewsTop";
 import NewsMain from "../components/Web/Web-NewsPage/NewsMain";
 import NewsBottom from "../components/Web/Web-NewsPage/NewsBottom";
@@ -26,11 +26,11 @@ export default function NewsPage() {
           </NewsPageComponent_Web>
         ) : (
           <NewsPageComponent_Mob>
-            <NavBarMov />
+            <NavBarMob />
             <NewsTopMob />
             <NewsMainMob />
             <NewsBottomMob />
-            <FooterMov />
+            <FooterMob />
           </NewsPageComponent_Mob>
         )}
       </NewsPageComponent>

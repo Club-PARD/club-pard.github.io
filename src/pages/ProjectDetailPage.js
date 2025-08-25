@@ -1,9 +1,9 @@
 import Navbar from "../components/NavBar";
 import styled from "styled-components";
 import { useMediaQuery } from "react-responsive";
-import NavBarMov from "../components/NavBarMov";
+import NavBarMob from "../components/NavBarMob";
 import Footer from "../components/Footer";
-import FooterMov from "../components/FooterMov";
+import FooterMob from "../components/FooterMob";
 import ProjectDetail from "../components/Web/Web-ProjectPage/ProjectDetail";
 import ProjectDetail_Mob from "../components/Mobile/Mob-ProjectPage/ProjectDetail_Mob";
 
@@ -20,9 +20,9 @@ function ProjectDetailPage() {
         </ProgramPageComponent_Web>
       ) : (
         <ProgramPageComponent_Mob>
-          <NavBarMov />
+          <NavBarMob />
           <ProjectDetail_Mob />
-          <FooterMov />
+          <FooterMob />
         </ProgramPageComponent_Mob>
       )}
     </AboutPageComponent>
