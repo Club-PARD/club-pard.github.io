@@ -42,7 +42,7 @@ const BannerImg = styled.div`
 
   img {
     width: 100%;
-    height: 100px;
+    height: 110px;
     object-fit: cover;
     text-align: center;
   }

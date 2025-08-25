@@ -6,7 +6,6 @@ import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { getMobBanner } from "../../../utils/api";
 
-
 export const BannerMob = () => {
   const navigate = useNavigate();
 
@@ -42,11 +41,10 @@ export const BannerMob = () => {
 
 const BannerImg = styled.div`
   width: 100vw;
-  //height: 300px;
+  height: 198px;
 
   img {
     width: 100%;
-    height: 100px;
     object-fit: cover;
     text-align: center;
   }
