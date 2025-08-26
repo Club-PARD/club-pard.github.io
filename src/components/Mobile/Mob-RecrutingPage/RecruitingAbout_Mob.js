@@ -213,7 +213,7 @@ function RecruitingAbout() {
           answer: (
             <>
               A. 6기 기준 iOS 앱 개발을 위한 <br />
-              &nbsp; &nbsp; &nbsp;Swift UI를 사용하고 있습니다.
+              &nbsp; &nbsp; &nbsp;SwiftUI를 사용하고 있습니다.
             </>
           ),
           select: false,
