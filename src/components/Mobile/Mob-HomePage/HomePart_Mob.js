@@ -53,7 +53,7 @@ function HomePartsMob() {
       imageSrc: APPImage,
       title: "앱(iOS)",
       description:
-        "사용자를 위한 어플리케이션 \nUI를 설계하고 swift Uikit 기반 \niOS 앱 서비스를 개발합니다.",
+        "사용자를 위한 어플리케이션 \nUI를 설계하고 SwiftUI 기반 \niOS 앱 서비스를 개발합니다.",
     },
     {
       id: 4,
