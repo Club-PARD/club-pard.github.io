@@ -74,7 +74,7 @@ const Nav = styled.nav`
   height: 69px;
   z-index: 999;
   border-bottom: none;
-  margin-top: 130px; // 배너 시 130px
+  margin-top: 0px; // 배너 시 130px
 `;
 
 const Logo = styled.div`

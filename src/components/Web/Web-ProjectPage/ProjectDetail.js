@@ -299,7 +299,7 @@ const Container = styled.div`
   align-items: center;
   gap: 15px;
   background: #1A1A1A;
-  margin-top: 200px; //배너 내리고 162px로 수정
+  margin-top: 162px; // 배너 내리고 162px로 수정 (기존 200px)
 `;
 
 const LoadingText = styled.p`

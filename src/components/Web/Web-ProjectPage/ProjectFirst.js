@@ -45,7 +45,7 @@ const PartDiv = styled.div`
   padding-left: 268px;
   padding-right: 268px;
   padding-top: 230px;
-  height: 700px; //배너 내리면 390px
+  height: 390px; //배너 내리면 390px (배너 시 700px)
   display: flex;
   justify-content: center;
 
